@@ -29,12 +29,12 @@
  */
 
 #define DEF_FREQUENCY_DOWN_DIFFERENTIAL		(10)
-#define DEF_FREQUENCY_UP_THRESHOLD		(80)
-#define MICRO_FREQUENCY_DOWN_DIFFERENTIAL	(3)
-#define MICRO_FREQUENCY_UP_THRESHOLD		(95)
-#define MICRO_FREQUENCY_MIN_SAMPLE_RATE		(10000)
-#define MIN_FREQUENCY_UP_THRESHOLD		(11)
-#define MAX_FREQUENCY_UP_THRESHOLD		(100)
+#define DEF_FREQUENCY_UP_THRESHOLD		(75)
+#define MICRO_FREQUENCY_DOWN_DIFFERENTIAL	(10)
+#define MICRO_FREQUENCY_UP_THRESHOLD		(75)
+#define MICRO_FREQUENCY_MIN_SAMPLE_RATE		(9000)
+#define MIN_FREQUENCY_UP_THRESHOLD		(45)
+#define MAX_FREQUENCY_UP_THRESHOLD		(75)
 
 /*
  * The polling frequency of this governor depends on the capability of
@@ -52,7 +52,7 @@ static unsigned int min_sampling_rate;
 
 #define LATENCY_MULTIPLIER			(1000)
 #define MIN_LATENCY_MULTIPLIER			(100)
-#define TRANSITION_LATENCY_LIMIT		(10 * 1000 * 1000)
+#define TRANSITION_LATENCY_LIMIT		(1 * 1000 * 1000)
 
 static void do_dbs_timer(struct work_struct *work);
 static int cpufreq_governor_dbs(struct cpufreq_policy *policy,
