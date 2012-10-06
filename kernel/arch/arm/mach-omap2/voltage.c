@@ -389,15 +389,15 @@ static struct omap_volt_data omap36xx_vdd2_volt_data[] = {
  * driver after reading the efuse.
  */
 static struct omap_volt_data omap44xx_vdd_mpu_volt_data[] = {
-	{.volt_nominal = 820000, .sr_errminlimit = 0xF4, .vp_errgain = 0x0C, .abb_type = NOMINAL_OPP},
-	{.volt_nominal = 910000, .sr_errminlimit = 0xF4, .vp_errgain = 0x0C, .abb_type = NOMINAL_OPP},
+	{.volt_nominal = 850000, .sr_errminlimit = 0xF4, .vp_errgain = 0x0C, .abb_type = NOMINAL_OPP},
+	{.volt_nominal = 900000, .sr_errminlimit = 0xF4, .vp_errgain = 0x0C, .abb_type = NOMINAL_OPP},
 	{.volt_nominal = 950000, .sr_errminlimit = 0xF9, .vp_errgain = 0x16, .abb_type = NOMINAL_OPP},
+	{.volt_nominal = 1050000, .sr_errminlimit = 0xF9, .vp_errgain = 0x16, .abb_type = NOMINAL_OPP},
 	{.volt_nominal = 1100000, .sr_errminlimit = 0xF9, .vp_errgain = 0x16, .abb_type = NOMINAL_OPP},
-	{.volt_nominal = 1200000, .sr_errminlimit = 0xF9, .vp_errgain = 0x16, .abb_type = NOMINAL_OPP},
-	{.volt_nominal = 1300000, .sr_errminlimit = 0xFA, .vp_errgain = 0x23, .abb_type = NOMINAL_OPP},
-	{.volt_nominal = 1350000, .sr_errminlimit = 0xFA, .vp_errgain = 0x27, .abb_type = FAST_OPP},
-	{.volt_nominal = 1360000, .sr_errminlimit = 0xFA, .vp_errgain = 0x27, .abb_type = FAST_OPP},
-	{.volt_nominal = 1374000, .sr_errminlimit = 0xFA, .vp_errgain = 0x27, .abb_type = FAST_OPP},
+	{.volt_nominal = 1150000, .sr_errminlimit = 0xF9, .vp_errgain = 0x16, .abb_type = NOMINAL_OPP},
+	{.volt_nominal = 1250000, .sr_errminlimit = 0xFA, .vp_errgain = 0x23, .abb_type = NOMINAL_OPP},
+	{.volt_nominal = 1300000, .sr_errminlimit = 0xFA, .vp_errgain = 0x27, .abb_type = FAST_OPP},
+	{.volt_nominal = 1355000, .sr_errminlimit = 0xFA, .vp_errgain = 0x27, .abb_type = FAST_OPP},
 };
 
 static struct omap_volt_data omap44xx_vdd_iva_volt_data[] = {
@@ -437,15 +437,15 @@ static struct omap_vdd_dep_info omap34xx_vdd1_dep_info[] = {
 /* OMAP 4430 MPU Core VDD dependency table */
 
 static struct omap_vdd_dep_volt omap44xx_vddmpu_vddcore_data[] = {
-	{.main_vdd_volt = 820000, .dep_vdd_volt = 930000},
-	{.main_vdd_volt = 910000, .dep_vdd_volt = 930000},
-	{.main_vdd_volt = 950000, .dep_vdd_volt = 930000},
+	{.main_vdd_volt = 850000, .dep_vdd_volt = 1025000},
+	{.main_vdd_volt = 900000, .dep_vdd_volt = 1025000},
+	{.main_vdd_volt = 950000, .dep_vdd_volt = 1200000},
+	{.main_vdd_volt = 1050000, .dep_vdd_volt = 1200000},
 	{.main_vdd_volt = 1100000, .dep_vdd_volt = 1200000},
-	{.main_vdd_volt = 1200000, .dep_vdd_volt = 1200000},
+	{.main_vdd_volt = 1150000, .dep_vdd_volt = 1200000},
+	{.main_vdd_volt = 1250000, .dep_vdd_volt = 1200000},
 	{.main_vdd_volt = 1300000, .dep_vdd_volt = 1200000},
-	{.main_vdd_volt = 1350000, .dep_vdd_volt = 1200000},
-	{.main_vdd_volt = 1360000, .dep_vdd_volt = 1200000},
-	{.main_vdd_volt = 1374000, .dep_vdd_volt = 1200000},
+	{.main_vdd_volt = 1355000, .dep_vdd_volt = 1200000},
 };
 
 static struct omap_vdd_dep_volt omap44xx_vddiva_vddcore_data[] = {
